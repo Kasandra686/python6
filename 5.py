@@ -4,10 +4,20 @@ class Stationery:
     def draw(self):
         print("Запуск отрисовки")
 class Pen(Stationery):
-    print("Запуск отрисовки ручки")
+    def draw(self):
+     print("Запуск отрисовки ручки")
 
-class Pen(Stationery):
-    print("Запуск отрисовки ручки")
+class Pencil(Stationery):
+    def draw(self):
+        print("Запуск отрисовки карандаша")
 
-    class Pen(Stationery):
-        print("Запуск отрисовки ручки")
+class Handle(Stationery):
+    def draw(self):
+        print("Запуск отрисовки маркера")
+
+pen = Pen("Имя")
+pen.draw()
+pen2 = Pencil("Имя")
+pen2.draw()
+pen3 = Handle("Имя")
+pen3.draw()
